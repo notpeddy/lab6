@@ -2,26 +2,26 @@
 #include<cmath>
 using namespace std;
 double deg2rad(double d){
-     return d*M_PI/180;
+     return (d*M_PI)/180;
 }
 double rad2deg(double r){
-     return r*M_PI/2;
+     return (r*180)/M_PI;
 }
 double findXComponent(double a,double b, double c, double e){
-     return (a*cos(b*M_PI/180))+(c*cos(d*M_PI/180));
+     return (a*cos(c)) + (b*cos(e));
 }
-double findYComponent(double a,double b, double c, double e){
-     return (a*sin(b*M_PI/180))+(c*sin(d*M_PI/180));
+double findYComponent(double f,double g, double h, double i){
+     return (f*sin(h)) + (g*sin(i));
 }
-double pythagoras(double a,double b){
-     return sqrt(pow(a,2)+pow(b,2))
+double pythagoras(double j,double k){
+     return sqrt(pow(j,2)+ pow(k,2));
 }
-void showResult(){
-     cout<<"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%";
+void showResult(double l, double m){
+     cout<<"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
 
-cout << "Length of the resultant vector = " << ;
+cout << "Length of the resultant vector = " << l << "\n";
 
-cout << "Direction of the resultant vector (deg) = "<< ;
+cout << "Direction of the resultant vector (deg) = "<< m << "\n";
 
 cout<<"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%";
 }
@@ -42,9 +42,7 @@ int main(){
 
 
     a1 = deg2rad(a1);
-    cout <<  a1;
     a2 = deg2rad(a2);
-    cout << a2;
     xcomp = findXComponent(l1,l2,a1,a2);
     ycomp = findYComponent(l1,l2,a1,a2);
     result_vec_length = pythagoras(xcomp,ycomp);
