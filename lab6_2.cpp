@@ -36,11 +36,7 @@ int main(){
     cin >> l2;
     cout << "Enter direction of the second vector (deg): ";
     cin >> a2;
-
-    
-    
-
-
+     
     a1 = deg2rad(a1);
     a2 = deg2rad(a2);
     xcomp = findXComponent(l1,l2,a1,a2);
